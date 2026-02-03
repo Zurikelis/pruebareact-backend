@@ -9,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact",
-        policy => policy.WithOrigins("http://localhost:3000")
+        policy => policy.WithOrigins("https://pruebareact-frontend.onrender.com")
                         .AllowAnyHeader()
                         .AllowAnyMethod());
 });
