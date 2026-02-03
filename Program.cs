@@ -9,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact",
-        policy => policy.WithOrigins("https://pruebareact-frontend.onrender.com")
+        policy => policy.WithOrigins("https://pruebareact-frontend-shk5.vercel.app")
                         .AllowAnyHeader()
                         .AllowAnyMethod());
 });
